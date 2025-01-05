@@ -1,5 +1,3 @@
-import SimpleMath as sm
-
 class Vector:
     def __init__(self, components):
         if not isinstance(components, list):
@@ -46,8 +44,7 @@ class Vector:
 
     def norm(self):
         # Евклидова норма вектора
-        return sm.sqrt(sum(a ** 2 for a in self.components))
+        return (sum(a ** 2 for a in self.components))
 
     def len(self):
         return len(self.components)
-

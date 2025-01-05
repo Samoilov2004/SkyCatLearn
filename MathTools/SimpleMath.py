@@ -135,3 +135,5 @@ def atanh(x):
     if x <= -1 or x >= 1:
         raise ValueError("x must be in the range (-1, 1)")
     return 0.5 * log((1 + x) / (1 - x))
+
+__all__ = ['pi', 'e', 'tau', 'inf', 'nan', 'sin', 'cos', 'tan', 'asin', 'acos', 'atan', 'atan2', 'sinh', 'cosh', 'tanh', 'asinh', 'acosh', 'atanh', 'sqrt', 'log']
